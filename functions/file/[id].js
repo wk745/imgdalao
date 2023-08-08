@@ -84,7 +84,7 @@ export async function onRequest(context) {  // Contents of context object
                     
                 }
             }else{
-                await fetch(`https://api.moderatecontent.com/moderate/?key=`+apikey+`&url=https://9rk0edpq.cachefly.net/` + url.pathname + url.search).
+                await fetch(`https://api.moderatecontent.com/moderate/?key=`+apikey+`&url=https://telegra.ph/` + url.pathname + url.search).
                 then(async (response) => {
                     let moderate_data = await response.json();
                     console.log(moderate_data)
